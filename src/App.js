@@ -15,7 +15,7 @@ function App() {
     <Booksprovider>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Books />} />
+          <Route path='/react-router' element={<Books />} />
           <Route path='/books' element={<Navigate to='/' />} />
           <Route path='/books/:bookId' element={<BookDetails />} />
           <Route path='*' element={<NotFound />} />
