@@ -18,7 +18,7 @@ function App() {
           <Route path='/' element={<Books />} />
           <Route path='/books' element={<Navigate to='/' />} />
           <Route path='/books/:bookId' element={<BookDetails />} />
-          <Route path='*' element={<NotFound />} />
+          <Route path='*' element={<Books />} />
           <Route path='/secret' element={<PrivateRoute Componet={<SecretBookList />} />} />
         </Routes>
       </BrowserRouter>
